@@ -25,7 +25,7 @@ body{
     color: var(--text-color);
 }
 
-header{
+.header{
     position: fixed;
     width: 100%;
     top: 0;
@@ -50,7 +50,7 @@ header{
 
 .logo{
 /*width: 80px;*/
-width: 120px;
+width: 80px;
 height: auto;
 cursor: pointer;
 transition: 0.3s ease-in-out;
@@ -120,14 +120,14 @@ align-items: flex-end;
 text-align: right;
 }
 .home-content h1{
-font-size: 8rem;
-font-weight: 800;
-margin-right: 1.5rem;
+font-size: 6rem;
+font-weight: 700;
+margin-top: 1.5rem;
 line-height: 1;
 }
 .home-content h3{
 margin: 1rem 0;
-font-size: 4rem;
+font-size: 3rem;
 }
 .home-content p{
 font-size: 1.5rem;
@@ -135,7 +135,7 @@ font-weight: 500;
 line-height: 1.8;
 }
 .home-img img{
-    width: 26vw;
+    width: 30vw;
     border-radius: 50%;
     box-shadow: 0 0 25px var(--main-color);
     transition: 0.4s ease-in-out;
@@ -233,6 +233,63 @@ color: #ffffff;
 }
 ::-webkit-scrollbar-track{
     background-color: var(--bg-color);
+}
+
+.heading{
+    text-align: center;
+    font-size: 7rem;
+    margin: 5rem 0;
+}
+.services{
+    background-color: var(--bg-color);
+    color: black;
+}
+.services h2{
+    color: var(--text-color);
+}
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    gap: 2.5rem;
+}
+.services-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 500px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid transparent;
+    transition: 0.4s ease-in-out;
+}
+.services-box:hover{
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+.services-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+.services-info h4{
+    font-size: 4rem;
+    margin: 2rem 0;
+    font-weight: 800;
+}
+.services-info p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7;
+}
+.services-info i{
+    font-size: 8rem;
 }
 
 
